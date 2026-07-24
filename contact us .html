@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <style>
+            body, html {
+  color: #666;
+  background-color: #b6f8ef;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  display: inline;
+  color: #d4ffee;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.topnav a:hover {
+  color: #ffffff;
+}
+
+.ping1, .ping2, .ping3 {
+  position: relative;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+        </style>
+    </head>
+    <body>
+    <nav class="topnav">
+        <a class="active" href="#">Home</a>
+        <a href="#">About our store and app</a>
+        <a href="#">search here</a>
+        <a href="#">types of cats</a>
+        <a href="#">Contact us</a>
+    </nav>
+    
+        <h1>Contact us at:</h1>
+        <h2> shreedevi@gmail.com </h2>
+    
+        <fieldset>
+            <legend> Contact us at: </legend>
+            <label>Name ~</label><br>
+            <input type="text" name="name"><br>
+            <label>Enter your age ~</label><br>
+            <input type="text" name="age"><br>
+            <label> Enter your email ~</label><br>
+            <input type="text" name="email"><br>
+            <label>Message :</label><br>
+            <textarea></textarea><br>
+            <br>
+            <button>send</button>
+        </fieldset>
+        <br>
+        <br>
+        </form>
+        <section>
+            <img class="mySlides" src="cat1.jpeg" style="height:500px;">
+            <img class="mySlides" src="cat2.jpeg" style="height:500px; ">
+            <img class="mySlides" src="cat3.jpeg" style="height:500px;">
+        </section>
+    
+        <script>
+            var myIndex = 0;
+
+            carousel();
+
+            function carousel() {
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+        </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+
+</html>
